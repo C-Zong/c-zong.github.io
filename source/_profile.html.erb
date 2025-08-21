@@ -1,0 +1,33 @@
+<%# Profile Section (Left Column) %>
+<div class="sticky-md-top" style="top: 61px;">
+  <img src="<%= data.images.avatar.path %>" alt="<%= data.images.avatar.alt %>" class="img-fluid d-block mx-auto" style="max-width:200px;">
+  <div class="fs-1 fs-bold text-center my-2"><%= data.profile.name %></div>
+
+  <ul class="list-group list-group-flush mt-3 mb-5">
+    <%# Contact Information %>
+    <% data.profile.contacts.each do |contact| %>
+      <li class="list-group-item list-group-item-action py-6">
+        <div class="row">
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <i class="bi bi-<%= contact.icon %> fs-1"></i>
+          </div>
+          <div class="col-10">
+            <div class="text-body-secondary text-center fs-5"><%= contact.type %></div>
+            <div class="text-center fs-4"><%= contact.value %></div>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="row justify-content-center">
+    <%# Social Media Links %>
+    <% data.profile.social.each do |social| %>
+    <div class="col-auto">
+      <a href="<%= social.url %>" class="btn btn-outline-primary" target="_blank">
+        <i class="bi bi-<%= social.icon %> fs-4"></i>
+      </a>
+    </div>
+    <% end %>
+  </div>
+</div>

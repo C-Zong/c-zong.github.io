@@ -1,0 +1,44 @@
+<header class="py-2 sticky-top" style="z-index: 2000;">
+  <div class="row justify-content-between">
+
+    <%# Anchor links %>
+    <div class="col-auto">
+      <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start" id="sidebar">
+        <div class="offcanvas-body position-relative">
+          <div class="row mb-4">
+            <div class="col-8 offset-2">
+              <img src="<%= data.images.logo.path %>" alt="<%= data.images.logo.alt %>" class="img-fluid">
+            </div>
+          </div>
+          
+          <div class="list-group list-group-flush">
+            <% data.locales.en.each do |section| %>
+              <% key = section.keys.first %>
+              <a href="#<%= key %>" class="list-group-item list-group-item-action py-6 fs-3">
+                <i class="bi bi-<%= section.icon %>"></i> <%= section.title.split('(').first %>
+              </a>
+            <% end %>
+          </div>
+
+          <button class="btn btn-outline-primary position-absolute bottom-0 start-0 m-3" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="bi bi-arrow-left-square"></i> Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <%# Translation and theme toggle %>
+    <div class="col-auto">
+      <button class="btn btn-outline-secondary me-2" type="button">
+        <i class="bi bi-translate"></i>
+      </button>
+      <button class="btn btn-outline-secondary" type="button">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,7 @@
+logo:
+  path: images/logo.png
+  alt: Logo
+
+avatar:
+  path: images/avatar_placeholder.png
+  alt: Avatar

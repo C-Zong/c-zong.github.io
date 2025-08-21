@@ -1,0 +1,18 @@
+name: Cyan Zone
+
+contacts:
+  - type: Phone
+    value: +1 614 377 4574
+    icon: phone
+  - type: Email (Preferred)
+    value: zong.114@osu.edu
+    icon: envelope-paper
+  - type: Location
+    value: Columbus, Ohio, US
+    icon: geo-alt
+
+social:
+  - icon: github
+    url: https://github.com/c-zong
+  - icon: linkedin
+    url: https://www.linkedin.com/in/chenyangzong/

@@ -1,0 +1,53 @@
+- welcome:
+  title: Welcome
+  icon: house
+  content:
+    - Welcome to my little space on the web!
+    - I’m a senior majoring in Computer Science at OSU and will graduate in May 2026.
+    - After that, I plan to work in the industry for a year before applying to graduate school for Fall 2027.
+    - I hope to get some hands-on experience and explore what excites me most in tech.
+    - Feel free to scroll down and get to know me better!
+
+- education:
+  title: Education
+  icon: mortarboard
+  universities:
+    - image:
+        path: images/osu_logo.png
+        alt: OSU Logo
+      name: The Ohio State University, Columbus, OH, US
+      degree: Bachelor of Science, majoring in Computer and Information Science
+      dates: August 2024 - May 2026 (Expected)
+      honors:
+        - 'Current GPA: 4.0/4.0'
+        - Dean's List (3 times)
+    - image:
+        path: images/cqupt_logo.png
+        alt: CQUPT Logo
+      name: Chongqing University of Posts and Telecommunications, Chongqing, China
+      degree: Bachelor of Engineering, majoring in Computer Science and Technology (Transferred)
+      dates: September 2022 - July 2024
+      honors:
+        - 'Average Score: 88.12/100, GPA: 3.57/4.0'
+        - |
+          Courses with 4.0 GPA: Introduce to Computer Science, Linear Algebra, Probability and Mathematical Statics, Discrete Mathematics,
+          C Programming, Python Programming, Digital Circuit and Logical Design Experiment A, and 10 others
+
+- projects:
+  title: Projects
+  icon: folder
+- work_experience:
+  title: Work Experience
+  icon: briefcase
+- technical_skills:
+  title: Technical Skills
+  icon: gear
+- progresses:
+  title: Progresses
+  icon: bar-chart
+- interests:
+  title: Interests (Besides Programming)
+  icon: heart
+- todo_list:
+  title: Todo List
+  icon: check-square
