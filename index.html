@@ -64,12 +64,11 @@
     </div>
 
     <div class="col-auto">
-      <button class="btn btn-outline-secondary me-2" type="button">
-        <i class="bi bi-translate"></i>
-      </button>
-      <button class="btn btn-outline-secondary" type="button">
-        <i class="bi bi-sun-fill"></i>
-      </button>
+      <form id="config">
+        <button class="btn btn-outline-secondary" name="theme" type="button">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </form>
     </div>
   </div>
 </header>
@@ -118,12 +117,12 @@
 
   <div class="row justify-content-center">
     <div class="col-auto">
-      <a href="https://github.com/c-zong" class="btn btn-outline-primary" target="_blank">
+      <a href="https://github.com/c-zong" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github fs-4"></i>
       </a>
     </div>
     <div class="col-auto">
-      <a href="https://www.linkedin.com/in/chenyangzong/" class="btn btn-outline-primary" target="_blank">
+      <a href="https://www.linkedin.com/in/chenyangzong/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-linkedin fs-4"></i>
       </a>
     </div>
@@ -137,7 +136,7 @@
       </div>
       <div class="ms-3">
     <p class="fs-5 lh-lg mb-3">Welcome to my little space on the web!</p>
-    <p class="fs-5 lh-lg mb-3">I’m a senior majoring in Computer Science at OSU and will graduate in May 2026.</p>
+    <p class="fs-5 lh-lg mb-3">I'm a senior majoring in Computer Science at OSU and will graduate in May 2026.</p>
     <p class="fs-5 lh-lg mb-3">After that, I plan to work in the industry for a year before applying to graduate school for Fall 2027.</p>
     <p class="fs-5 lh-lg mb-3">I hope to get some hands-on experience and explore what excites me most in tech.</p>
     <p class="fs-5 lh-lg mb-3">Feel free to scroll down and get to know me better!</p>
@@ -179,19 +178,25 @@ C Programming, Python Programming, Digital Circuit and Logical Design Experiment
       <div class="fs-1 border-bottom mb-3" id="projects">
         <i class="bi bi-folder"></i> Projects
       </div>
-      <div class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title fw-bold">personal website</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Ruby | Middleman | HTML |Bootstrap</h6>
-    <ul class="card-text">
-      <li>Used HTML, CSS, and JavaScript</li>
-      <li>Responsive design for mobile and desktop</li>
-      <li>Deployed on GitHub Pages</li>
-    </ul>
-    <a href="#" class="btn btn-outline-primary">View</a>
+        <div class="card">
+    <div class="col-11 mx-auto my-4">
+      <img src="images/project_personal_website_img1.png" class="card-img-top" alt="Personal website screenshot">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fs-3 fw-bold text-center">Personal Website (Static Site)</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary text-center">Ruby | Middleman | Bootstrap | JavaScript</h6>
+      <div class="col-10 mx-auto my-4">
+        <ul class="card-text">
+            <li class="fs-6">Built a modular, YAML-driven static site with Middleman, <strong>reducing update effort and improving maintainability</strong>.</li>
+            <li class="fs-6">Designed a <strong>responsive Bootstrap layout</strong> and added <strong>JavaScript-based theme toggle</strong>, enhancing usability and user experience.</li>
+        </ul>
+      </div>
+      <div class="col-auto text-center my-4">
+        <a href="https://cyan-zone.com" class="btn btn-outline-primary " target="_blank" rel="noopener noreferrer">View</a>
+      </div>
+    </div>
   </div>
-</div>
+
       <br><br>
       <div class="fs-1 border-bottom mb-3" id="work_experience">
         <i class="bi bi-briefcase"></i> Work Experience
@@ -201,46 +206,185 @@ C Programming, Python Programming, Digital Circuit and Logical Design Experiment
       <div class="fs-1 border-bottom mb-3" id="technical_skills">
         <i class="bi bi-gear"></i> Technical Skills
       </div>
+      <ul class="list-unstyled">
+    <li class="mb-3">
+      <strong class="fs-5">Core Skills:</strong>
       <ul>
-  <li class="mb-2">Programming Languages: Ruby, JavaScript, Python</li>
-  <li class="mb-2">Web Development: HTML, CSS, Bootstrap</li>
-  <li class="mb-2">Tools & Platforms: Git, GitHub, Visual Studio Code</li>
+          <li class="fs-6">Programming Languages: Java, C, Ruby, JavaScript, x86-64 Assembly, Python, Visual Basic</li>
+          <li class="fs-6">Web Development: HTML, CSS, Bootstrap, Middleman, Ruby on Rails, Vue, Element UI</li>
+          <li class="fs-6">Computer Science Fundamentals: Data Structures, Digital Circuits, Computer Networks, Computer Systems</li>
+          <li class="fs-6">Databases: MySQL</li>
+      </ul>
+    </li>
+    <li class="mb-3">
+      <strong class="fs-5">Tools & Platforms (Familiar With):</strong>
+      <ul>
+          <li class="fs-6">Git & GitHub</li>
+          <li class="fs-6">Maven, Tomcat, Postman</li>
+          <li class="fs-6">GDB, Makefiles</li>
+          <li class="fs-6">Visual Studio Code</li>
+          <li class="fs-6">Linux (Ubuntu, hands-on experience)</li>
+      </ul>
+    </li>
+    <li class="mb-3">
+      <strong class="fs-5">Currently Learning:</strong>
+      <ul>
+          <li class="fs-6">Spring Boot (in progress), MyBatis (in progress)</li>
+      </ul>
+    </li>
 </ul>
       <br><br>
       <div class="fs-1 border-bottom mb-3" id="progresses">
         <i class="bi bi-bar-chart"></i> Progresses
       </div>
-      
+        <div class="card my-3">
+    <div class="card-header fs-5">
+      Autumn 2024 - Spring 2026 (Expected)
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        Courses
+            <iconify-icon icon="devicon:java" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:cpu-64-bit" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:xml" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:web" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:gamepad-variant" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:robot" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:code-braces" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:database" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">The Ohio State University</div>
+      <div class="card-text">Completed courses in Java, assembly language, web application development, and computer networks.<br><br>
+Planned courses: Game Animation, Artificial Intelligence, Principles of Programming Languages (CSE 3341), and Databases.<br><br>
+Built a simple budget tracker in Java (see GitHub repo profolio-2231). It wasn't very practical, but it helped me understand Java structure better. Also used Makefiles to simplify packaging and wrote simple assembly code.
+From the web application development course, I learned Git, HTML, CSS, JavaScript, Middleman, and Ruby on Rails, and worked in a Linux (Ubuntu) virtual machine environment. The course was a bit stressful, but I gained a lot of hands-on experience. Most of the team projects must remain private, but I plan to create personal projects to showcase the skills I learned.
+For computer networks, the many technical terms were challenging—I wasn't confident with my English and memory. Even though I earned a good grade, I have to admit I've forgotten quite a bit since then 😅.
+</div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      Summer 2025
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        Online Video Courses
+            <iconify-icon icon="logos:vue" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:cloud-sync" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="logos:element" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="devicon:maven" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="logos:tomcat" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="logos:postman-icon" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="logos:mysql" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="logos:spring-icon" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:database-cog" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">Backend Development</div>
+      <div class="card-text">Learned the basics of Vue, AJAX, Element UI, Maven, Tomcat, Postman, and MySQL.<br><br>
+Currently exploring Spring Boot and MyBatis.<br><br>
+Honestly, it was more of a quick glance 👀 — I might not be ready to build a full project yet, and I've already forgotten quite a bit 😅.
+</div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      Autumn 2022 - Spring 2024
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        Courses
+            <iconify-icon icon="devicon:c" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="devicon:python" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="carbon:data-structured" width="30" height="30"></iconify-icon>
+            <iconify-icon icon="mdi:chip" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">Chongqing University of Posts and Telecommunications</div>
+      <div class="card-text">Studied C, Python, data structures, and digital circuits.<br><br>
+Built a simple C-based management system as a course project. Though the code was bulky, I regret not learning how to publish it online at that time.
+Python was powerful but its numerous methods weren't very memory-friendly 😅.
+Digital circuits were fascinating with chips, though less enjoyable when dealing with oscilloscope configurations.
+</div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      Autumn 2020 - Spring 2022 (High School)
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        Visual Basic
+            <iconify-icon icon="devicon:visualbasic" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">First Programming Language in School</div>
+      <div class="card-text">Learned Visual Basic as part of a school course in Zhejiang Province. 
+It was a chosen elective subject for the Gaokao curriculum. Compared to NOIP in middle school, 
+it felt less challenging, focusing mostly on basic programming and simple algorithms, 
+but it helped solidify my understanding of programming fundamentals.
+</div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      Spring 2017 (Middle School)
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        NOIP
+            <iconify-icon icon="devicon:c" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">First Programming Contest</div>
+      <div class="card-text">Participated in my first coding contest using C. I didn't win any prizes, 
+but I gained valuable experience in algorithms and problem-solving. Honestly, 
+after this contest I wasn't very interested in coding for a while. It felt a bit early for me, 
+and I didn't have a solid foundation yet. However, this experience made it much easier to learn programming later on.
+</div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      Autumn 2015 (Primary School)
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        Scratch
+            <iconify-icon icon="arcticons:scratchjr" width="30" height="30"></iconify-icon>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3">Introduction to Programming</div>
+      <div class="card-text">Created simple games using Scratch, sparking my interest in coding.</div>
+    </div>
+  </div>
+
       <br><br>
       <div class="fs-1 border-bottom mb-3" id="interests">
-        <i class="bi bi-heart"></i> Interests (Besides Programming)
+        <i class="bi bi-heart"></i> Interests (Beyond Programming)
       </div>
-      <ul class="list-unstyled">
-  <li class="mb-2">A boring person entertains by watching TV shows and mobile games</li>
-  <li class="mb-2">Learned a little trumpet in primary school</li>
-  <li class="mb-2">Wish List</li>
-  <ul>
-    <li class="mb-2">Hope I can learn to compose music</li>
-    <li class="mb-2">Hope I can learn to digital painting</li>
-    <li class="mb-2">Hope I can learn to cook</li>
-    <li class="mb-2">Hope I can learn to take photos</li>
-  </ul>
+      <ul>
+    <li class="mb-2">Enjoy relaxing with TV shows📺 and mobile games🎮</li>
+    <li class="mb-2">Tried learning trumpet🎺 in primary school, still curious about music</li>
+    <li class="mb-2">Hoping to eventually learn music composition🎼, digital painting🖌️, cooking🍳, and photography📸… basically all the fun stuff I don't have time for yet!</li>
 </ul>
       <br><br>
       <div class="fs-1 border-bottom mb-3" id="todo_list">
         <i class="bi bi-check-square"></i> Todo List
       </div>
+      <ul class="list-unstyled">
+    <li class="mb-3">
+      <strong class="fs-5">August 2025 - Spring 2026:</strong>
       <ul>
-  <li class="mb-2">Graduate from OSU in May 2026</li>
-  <li class="mb-2">Apply for graduate school for Autumn 2027</li>
-  <li class="mb-2">Find a job between May 2026 and Autumn 2027</li>
-  <li class="mb-2">Continue learning and improving my skills</li>
+          <li class="fs-6">Build a budget tracker website using Ruby on Rails</li>
+          <li class="fs-6">Develop a management system using Spring</li>
+          <li class="fs-6">Learn Go and start a new project</li>
+          <li class="fs-6">Complete all of the above and finalize my resume</li>
+          <li class="fs-6">Hopefully start job hunting in Spring 2026</li>
+      </ul>
+    </li>
 </ul>
       <br><br>
 </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script><script src="/javascripts/sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q.js"></script><script src="/javascripts/anonymous.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="/javascripts/site.js"></script>
   </body>
 </html>
