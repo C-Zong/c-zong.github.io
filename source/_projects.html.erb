@@ -1,13 +1,22 @@
-<div class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title fw-bold">personal website</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Ruby | Middleman | HTML |Bootstrap</h6>
-    <ul class="card-text">
-      <li>Used HTML, CSS, and JavaScript</li>
-      <li>Responsive design for mobile and desktop</li>
-      <li>Deployed on GitHub Pages</li>
-    </ul>
-    <a href="#" class="btn btn-outline-primary">View</a>
+<% data.locales.en[index].projects.each do |project| %>
+  <div class="card">
+    <div class="col-11 mx-auto my-4">
+      <img src="<%= project.image.path %>" class="card-img-top" alt="<%= project.image.alt %>">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fs-3 fw-bold text-center"><%= project.title %></h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary text-center"><%= project.subtitle %></h6>
+      <div class="col-10 mx-auto my-4">
+        <ul class="card-text">
+          <% project.description.each do |desc| %>
+            <li class="fs-6"><%= desc %></li>
+          <% end %>
+        </ul>
+      </div>
+      <% link = project.link %>
+      <div class="col-auto text-center my-4">
+        <a href="<%= link ? link : '#' %>" class="btn btn-outline-primary <%= link ? '' : 'disabled' %>" target="_blank" rel="noopener noreferrer">View</a>
+      </div>
+    </div>
   </div>
-</div>
+<% end %>

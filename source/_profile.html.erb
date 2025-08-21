@@ -24,7 +24,7 @@
     <%# Social Media Links %>
     <% data.profile.social.each do |social| %>
     <div class="col-auto">
-      <a href="<%= social.url %>" class="btn btn-outline-primary" target="_blank">
+      <a href="<%= social.url %>" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-<%= social.icon %> fs-4"></i>
       </a>
     </div>

@@ -1,0 +1,19 @@
+<% data.locales.en[index].progresses.each do |progress| %>
+  <div class="card my-3">
+    <div class="card-header fs-5">
+      <%= progress.date %>
+    </div>
+    <div class="card-body">
+      <div class="card-title fs-4 fs-bold">
+        <%= progress.title %>
+        <% if progress.icons %>
+          <% progress.icons.each do |icon| %>
+            <iconify-icon icon="<%= icon %>" width="30" height="30"></iconify-icon>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="card-subtitle fs-6 text-body-secondary mb-3"><%= progress.subtitle %></div>
+      <div class="card-text"><%= progress.description %></div>
+    </div>
+  </div>
+<% end %>

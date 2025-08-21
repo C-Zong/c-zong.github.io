@@ -3,7 +3,7 @@
   icon: house
   content:
     - Welcome to my little space on the web!
-    - I’m a senior majoring in Computer Science at OSU and will graduate in May 2026.
+    - I'm a senior majoring in Computer Science at OSU and will graduate in May 2026.
     - After that, I plan to work in the industry for a year before applying to graduate school for Fall 2027.
     - I hope to get some hands-on experience and explore what excites me most in tech.
     - Feel free to scroll down and get to know me better!
@@ -36,18 +36,137 @@
 - projects:
   title: Projects
   icon: folder
+  projects:
+    - image:
+        path: images/project_personal_website_img1.png
+        alt: Personal website screenshot
+      title: Personal Website (Static Site)
+      subtitle: Ruby | Middleman | Bootstrap | JavaScript
+      description:
+        - Built a modular, YAML-driven static site with Middleman, <strong>reducing update effort and improving maintainability</strong>.
+        - Designed a <strong>responsive Bootstrap layout</strong> and added <strong>JavaScript-based theme toggle</strong>, enhancing usability and user experience.
+      link: https://cyan-zone.com
+
 - work_experience:
   title: Work Experience
   icon: briefcase
+
 - technical_skills:
   title: Technical Skills
   icon: gear
+  skills:
+    - title: Core Skills
+      items:
+        - "Programming Languages: Java, C, Ruby, JavaScript, x86-64 Assembly, Python, Visual Basic"
+        - "Web Development: HTML, CSS, Bootstrap, Middleman, Ruby on Rails, Vue, Element UI"
+        - "Computer Science Fundamentals: Data Structures, Digital Circuits, Computer Networks, Computer Systems"
+        - "Databases: MySQL"
+    - title: Tools & Platforms (Familiar With)
+      items:
+        - Git & GitHub
+        - Maven, Tomcat, Postman
+        - GDB, Makefiles
+        - Visual Studio Code
+        - Linux (Ubuntu, hands-on experience)
+    - title: Currently Learning
+      items:
+        - Spring Boot (in progress), MyBatis (in progress)
+
 - progresses:
   title: Progresses
   icon: bar-chart
+  progresses:
+    - date: Autumn 2024 - Spring 2026 (Expected)
+      title: Courses
+      icons:
+        - devicon:java
+        - mdi:cpu-64-bit
+        - mdi:xml
+        - mdi:web
+        - mdi:gamepad-variant
+        - mdi:robot
+        - mdi:code-braces
+        - mdi:database
+      subtitle: The Ohio State University
+      description: |
+        Completed courses in Java, assembly language, web application development, and computer networks.<br><br>
+        Planned courses: Game Animation, Artificial Intelligence, Principles of Programming Languages (CSE 3341), and Databases.<br><br>
+        Built a simple budget tracker in Java (see GitHub repo profolio-2231). It wasn't very practical, but it helped me understand Java structure better. Also used Makefiles to simplify packaging and wrote simple assembly code.
+        From the web application development course, I learned Git, HTML, CSS, JavaScript, Middleman, and Ruby on Rails, and worked in a Linux (Ubuntu) virtual machine environment. The course was a bit stressful, but I gained a lot of hands-on experience. Most of the team projects must remain private, but I plan to create personal projects to showcase the skills I learned.
+        For computer networks, the many technical terms were challenging—I wasn't confident with my English and memory. Even though I earned a good grade, I have to admit I've forgotten quite a bit since then 😅.
+    - date: Summer 2025
+      title: Online Video Courses
+      icons:
+        - logos:vue
+        - mdi:cloud-sync
+        - logos:element
+        - devicon:maven
+        - logos:tomcat
+        - logos:postman-icon
+        - logos:mysql
+        - logos:spring-icon
+        - mdi:database-cog
+      subtitle: Backend Development
+      description: |
+        Learned the basics of Vue, AJAX, Element UI, Maven, Tomcat, Postman, and MySQL.<br><br>
+        Currently exploring Spring Boot and MyBatis.<br><br>
+        Honestly, it was more of a quick glance 👀 — I might not be ready to build a full project yet, and I've already forgotten quite a bit 😅.
+    - date: Autumn 2022 - Spring 2024
+      title: Courses
+      icons:
+        - devicon:c
+        - devicon:python
+        - carbon:data-structured
+        - mdi:chip
+      subtitle: Chongqing University of Posts and Telecommunications
+      description: |
+        Studied C, Python, data structures, and digital circuits.<br><br>
+        Built a simple C-based management system as a course project. Though the code was bulky, I regret not learning how to publish it online at that time.
+        Python was powerful but its numerous methods weren't very memory-friendly 😅.
+        Digital circuits were fascinating with chips, though less enjoyable when dealing with oscilloscope configurations.
+    - date: Autumn 2020 - Spring 2022 (High School)
+      title: Visual Basic
+      icons:
+        - devicon:visualbasic
+      subtitle: First Programming Language in School
+      description: |
+        Learned Visual Basic as part of a school course in Zhejiang Province. 
+        It was a chosen elective subject for the Gaokao curriculum. Compared to NOIP in middle school, 
+        it felt less challenging, focusing mostly on basic programming and simple algorithms, 
+        but it helped solidify my understanding of programming fundamentals.
+    - date: Spring 2017 (Middle School)
+      title: NOIP
+      icons:
+        - devicon:c
+      subtitle: First Programming Contest
+      description: |
+        Participated in my first coding contest using C. I didn't win any prizes, 
+        but I gained valuable experience in algorithms and problem-solving. Honestly, 
+        after this contest I wasn't very interested in coding for a while. It felt a bit early for me, 
+        and I didn't have a solid foundation yet. However, this experience made it much easier to learn programming later on.
+    - date: Autumn 2015 (Primary School)
+      title: Scratch
+      icons:
+        - arcticons:scratchjr
+      subtitle: Introduction to Programming
+      description: Created simple games using Scratch, sparking my interest in coding.
+
 - interests:
-  title: Interests (Besides Programming)
+  title: Interests (Beyond Programming)
   icon: heart
+  interests:
+    - Enjoy relaxing with TV shows📺 and mobile games🎮
+    - Tried learning trumpet🎺 in primary school, still curious about music
+    - Hoping to eventually learn music composition🎼, digital painting🖌️, cooking🍳, and photography📸… basically all the fun stuff I don't have time for yet!
+
 - todo_list:
   title: Todo List
   icon: check-square
+  lists:
+    - date: August 2025 - Spring 2026
+      items:
+        - Build a budget tracker website using Ruby on Rails
+        - Develop a management system using Spring
+        - Learn Go and start a new project
+        - Complete all of the above and finalize my resume
+        - Hopefully start job hunting in Spring 2026

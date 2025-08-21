@@ -1,5 +1,12 @@
-<ul>
-  <li class="mb-2">Programming Languages: Ruby, JavaScript, Python</li>
-  <li class="mb-2">Web Development: HTML, CSS, Bootstrap</li>
-  <li class="mb-2">Tools & Platforms: Git, GitHub, Visual Studio Code</li>
+<ul class="list-unstyled">
+  <% data.locales.en[index].skills.each do |skill| %>
+    <li class="mb-3">
+      <strong class="fs-5"><%= skill.title %>:</strong>
+      <ul>
+        <% skill.items.each do |item| %>
+          <li class="fs-6"><%= item %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
 </ul>

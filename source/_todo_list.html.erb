@@ -1,6 +1,12 @@
-<ul>
-  <li class="mb-2">Graduate from OSU in May 2026</li>
-  <li class="mb-2">Apply for graduate school for Autumn 2027</li>
-  <li class="mb-2">Find a job between May 2026 and Autumn 2027</li>
-  <li class="mb-2">Continue learning and improving my skills</li>
+<ul class="list-unstyled">
+  <% data.locales.en[index].lists.each do |list| %>
+    <li class="mb-3">
+      <strong class="fs-5"><%= list.date %>:</strong>
+      <ul>
+        <% list.items.each do |item| %>
+          <li class="fs-6"><%= item %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
 </ul>
